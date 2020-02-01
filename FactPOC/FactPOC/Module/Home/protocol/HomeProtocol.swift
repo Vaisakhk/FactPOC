@@ -16,7 +16,7 @@ protocol HomeViewToPresenterProtocol: class{
 }
 
 protocol HomePresenterToViewProtocol: class{
-    func HomeFetchSuccess(result:[Fact])
+    func HomeFetchSuccess(result:[Fact],factTitle:String)
     func HomeFetchFailed(message:String)
 }
 
@@ -32,7 +32,7 @@ protocol HomePresenterToInteractorProtocol: class {
 
 protocol HomeInteractorToPresenterProtocol: class {
     func HomeDownloadStarted()
-    func HomeDownloadSuccess(result:[Fact])
+    func HomeDownloadSuccess(result:[Fact],titleString:String)
     func HomeDownloadFailed(message:String)
 
 }

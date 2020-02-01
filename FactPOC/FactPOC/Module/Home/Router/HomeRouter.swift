@@ -12,7 +12,7 @@ class HomeRouter: HomePresenterToRouterProtocol {
     
     //MARK:- Create Home Module
     static func createModule() -> UINavigationController {
-        let view = mainstoryboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+        let view = ViewController()//mainstoryboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
         
         let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
         let interactor: HomePresenterToInteractorProtocol = HomeInteractor()

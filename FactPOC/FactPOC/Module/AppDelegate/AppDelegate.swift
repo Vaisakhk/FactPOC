@@ -16,22 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = HomeRouter.createModule()
         window?.makeKeyAndVisible()
-        setupNavigationBarAppearance()
         return true
-    }
-    
-    //MARK:- Customize Navigation Bar Appearence
-    func setupNavigationBarAppearance() {
-        if #available(iOS 11.0, *) {
-            UINavigationBar.appearance().tintColor = UIColor(named: "navbarColor")
-        } else {
-            UINavigationBar.appearance().tintColor = UIColor(red: 80.0/255.0, green: 227.0/255.0, blue: 194.0/255.0, alpha: 1.0)
-        }
-        UINavigationBar.appearance().isTranslucent = true
-        let navbarTitleAtt = [
-            NSAttributedString.Key.foregroundColor: UIColor.black
-        ]
-        UINavigationBar.appearance().titleTextAttributes = navbarTitleAtt
     }
 }
 

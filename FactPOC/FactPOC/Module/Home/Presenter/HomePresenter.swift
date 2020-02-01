@@ -29,14 +29,14 @@ extension HomePresenter : HomeInteractorToPresenterProtocol {
         
     }
     
-    func HomeDownloadSuccess(result: [Fact]) {
+    func HomeDownloadSuccess(result: [Fact],titleString: String) {
         DispatchQueue.main.async {[weak self] in
-        self?.view?.HomeFetchSuccess(result: result)
+            self?.view?.HomeFetchSuccess(result: result, factTitle: titleString)
         }
     }
     func HomeDownloadFailed(message: String) {
         DispatchQueue.main.async {[weak self] in
-        self?.view?.HomeFetchFailed(message: message)
+            self?.view?.HomeFetchFailed(message: message)
         }
     }
 }

@@ -10,6 +10,6 @@ import Foundation
 
 struct Fact: Decodable {
     let title: String?
-    let factDescription: String?
-    let imageUrlString: String?
+    let description: String?
+    let imageHref: String?
 }
