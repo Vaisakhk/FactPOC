@@ -20,7 +20,6 @@
 		CEA61A2D23E62746005C8988 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A2023E62746005C8988 /* HomeRouter.swift */; };
 		CEA61A2E23E62746005C8988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA61A2223E62746005C8988 /* Assets.xcassets */; };
 		CEA61A2F23E62746005C8988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA61A2323E62746005C8988 /* LaunchScreen.storyboard */; };
-		CEA61A3023E62746005C8988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA61A2523E62746005C8988 /* Main.storyboard */; };
 		CEA61A3223E62C31005C8988 /* FactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3123E62C31005C8988 /* FactList.swift */; };
 		CEA61A3523E63034005C8988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3423E63034005C8988 /* AppDelegate.swift */; };
 		CEA61A3723E63EE9005C8988 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3623E63EE9005C8988 /* HomeTableViewCell.swift */; };
@@ -68,7 +67,6 @@
 		CEA61A2023E62746005C8988 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		CEA61A2223E62746005C8988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA61A2423E62746005C8988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CEA61A2623E62746005C8988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA61A3123E62C31005C8988 /* FactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactList.swift; sourceTree = "<group>"; };
 		CEA61A3423E63034005C8988 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA61A3623E63EE9005C8988 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 			children = (
 				CEA61A2223E62746005C8988 /* Assets.xcassets */,
 				CEA61A2323E62746005C8988 /* LaunchScreen.storyboard */,
-				CEA61A2523E62746005C8988 /* Main.storyboard */,
 			);
 			path = "App UI";
 			sourceTree = "<group>";
@@ -377,7 +374,6 @@
 			files = (
 				CEA61A2F23E62746005C8988 /* LaunchScreen.storyboard in Resources */,
 				CEA61A2E23E62746005C8988 /* Assets.xcassets in Resources */,
-				CEA61A3023E62746005C8988 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,14 +551,6 @@
 				CEA61A2423E62746005C8988 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CEA61A2523E62746005C8988 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEA61A2623E62746005C8988 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
