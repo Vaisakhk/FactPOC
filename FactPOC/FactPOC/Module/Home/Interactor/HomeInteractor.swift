@@ -45,7 +45,8 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
                     }
                     do {
                         let factList =  try decoder.decode(FactList.self, from: modifiedDataInUTF8Format)
-                        self?.presenter?.HomeDownloadSuccess(result:factList.rows ?? [], titleString: factList.title ?? "")
+                        self?.processResult(data: factList)
+                        
                     } catch {
                        self?.presenter?.HomeDownloadFailed(message: error.localizedDescription)
                     }
@@ -54,5 +55,21 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
         dataTask?.resume()
     }
     
-
+   //MARK:- Process The result (Filtered response to avoid empty results)
+    func processResult(data:FactList) {
+        let dataArray = data.rows?.filter({ (fact) -> Bool in
+            var isValid = true
+            if (fact.title == nil && fact.description == nil && fact.imageHref == nil) {
+                isValid = false
+            }else {
+                if(fact.title?.count != 0 && fact.description?.count != 0 && fact.imageHref? .count != 0) {
+                    isValid = true
+                }else {
+                    isValid = false
+                }
+            }
+            return isValid
+        });
+        self.presenter?.HomeDownloadSuccess(result:dataArray ?? [], titleString: data.title ?? "")
+    }
 }
