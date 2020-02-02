@@ -102,7 +102,7 @@ extension ViewController:HomePresenterToViewProtocol {
     
     func HomeFetchFailed(message: String) {
         hideSpinner()
-        showAlert(alertMessage: message, title: "FactPoc") { (isSuccess) in
+        showAlert(alertMessage: message, title: Constants.appName) { (isSuccess) in
             
         }
     }

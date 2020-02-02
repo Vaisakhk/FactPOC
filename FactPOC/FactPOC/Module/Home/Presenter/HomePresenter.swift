@@ -17,18 +17,11 @@ class HomePresenter: HomeViewToPresenterProtocol {
       func startDownloadHomeDetails() {
         interactor?.downloadHomeDetails()
     }
-    
-    func getSavedHomeDetails() {
-        interactor?.getHomeDetails()
-    }
 }
 
 //MARK:- Home Interactor To Presenter Protocol
 extension HomePresenter : HomeInteractorToPresenterProtocol {
-    func HomeDownloadStarted() {
-        
-    }
-    
+
     func HomeDownloadSuccess(result: [Fact],titleString: String) {
         DispatchQueue.main.async {[weak self] in
             self?.view?.HomeFetchSuccess(result: result, factTitle: titleString)

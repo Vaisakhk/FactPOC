@@ -23,6 +23,8 @@
 		CEA61A3223E62C31005C8988 /* FactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3123E62C31005C8988 /* FactList.swift */; };
 		CEA61A3523E63034005C8988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3423E63034005C8988 /* AppDelegate.swift */; };
 		CEA61A3723E63EE9005C8988 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3623E63EE9005C8988 /* HomeTableViewCell.swift */; };
+		CEA61A3E23E6D53C005C8988 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3D23E6D53C005C8988 /* Constants.swift */; };
+		CEA61A4023E6D791005C8988 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A3F23E6D791005C8988 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		CEA61A3123E62C31005C8988 /* FactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactList.swift; sourceTree = "<group>"; };
 		CEA61A3423E63034005C8988 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA61A3623E63EE9005C8988 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CEA61A3D23E6D53C005C8988 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEA61A3F23E6D791005C8988 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		EDE5537A51BFCDB89B686D3D /* Pods-FactPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactPOC.debug.xcconfig"; path = "Target Support Files/Pods-FactPOC/Pods-FactPOC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +173,7 @@
 			children = (
 				CEA61A3323E63034005C8988 /* AppDelegate */,
 				CEA61A1323E62746005C8988 /* Home */,
+				CEA61A3C23E6D50F005C8988 /* Helper */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -251,6 +256,15 @@
 				CEA61A3423E63034005C8988 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CEA61A3C23E6D50F005C8988 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CEA61A3F23E6D791005C8988 /* Reachability.swift */,
+				CEA61A3D23E6D53C005C8988 /* Constants.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		FC2CC3EE690075679619A490 /* Frameworks */ = {
@@ -506,7 +520,9 @@
 				CEA61A3523E63034005C8988 /* AppDelegate.swift in Sources */,
 				CEA61A3223E62C31005C8988 /* FactList.swift in Sources */,
 				CEA61A2D23E62746005C8988 /* HomeRouter.swift in Sources */,
+				CEA61A3E23E6D53C005C8988 /* Constants.swift in Sources */,
 				CEA61A3723E63EE9005C8988 /* HomeTableViewCell.swift in Sources */,
+				CEA61A4023E6D791005C8988 /* Reachability.swift in Sources */,
 				CEA61A2923E62746005C8988 /* HomePresenter.swift in Sources */,
 				CEA61A2B23E62746005C8988 /* ViewController.swift in Sources */,
 				CEA61A2A23E62746005C8988 /* HomeProtocol.swift in Sources */,

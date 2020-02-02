@@ -27,11 +27,9 @@ protocol HomePresenterToRouterProtocol: class {
 protocol HomePresenterToInteractorProtocol: class {
     var presenter:HomeInteractorToPresenterProtocol? {get set}
     func downloadHomeDetails()
-    func getHomeDetails()
 }
 
 protocol HomeInteractorToPresenterProtocol: class {
-    func HomeDownloadStarted()
     func HomeDownloadSuccess(result:[Fact],titleString:String)
     func HomeDownloadFailed(message:String)
 
