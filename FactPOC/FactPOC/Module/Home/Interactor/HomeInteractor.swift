@@ -44,12 +44,10 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
                         return
                     }
                     do {
-                        let responseJSONDict = try JSONSerialization.jsonObject(with: modifiedDataInUTF8Format)
                         let factList =  try decoder.decode(FactList.self, from: modifiedDataInUTF8Format)
                         self?.presenter?.HomeDownloadSuccess(result:factList.rows ?? [], titleString: factList.title ?? "")
-                        print(responseJSONDict)
                     } catch {
-                        print(error)
+                       self?.presenter?.HomeDownloadFailed(message: error.localizedDescription)
                     }
                 }
         }
