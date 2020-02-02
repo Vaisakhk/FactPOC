@@ -10,7 +10,6 @@
 		1FAEB7090D02926A590F289F /* Pods_FactPOC_FactPOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA3AB187EF67CF6D120D47E /* Pods_FactPOC_FactPOCUITests.framework */; };
 		28BFD5A23EB3A000869105ED /* Pods_FactPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E0EF7A50F784A05AECE5F /* Pods_FactPOC.framework */; };
 		BA083FCE438119695982BA11 /* Pods_FactPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF52D273AF5EB62264E4010 /* Pods_FactPOCTests.framework */; };
-		CEA619EA23E53354005C8988 /* FactPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA619E823E53354005C8988 /* FactPOC.xcdatamodeld */; };
 		CEA619FA23E53359005C8988 /* FactPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA619F923E53359005C8988 /* FactPOCTests.swift */; };
 		CEA61A0523E53359005C8988 /* FactPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A0423E53359005C8988 /* FactPOCUITests.swift */; };
 		CEA61A2823E62746005C8988 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A1623E62746005C8988 /* Fact.swift */; };
@@ -54,7 +53,6 @@
 		BD5FCB328DBC43F8921D4C17 /* Pods-FactPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactPOCTests.release.xcconfig"; path = "Target Support Files/Pods-FactPOCTests/Pods-FactPOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		C880D22FF5CAB499003996AD /* Pods-FactPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactPOC.release.xcconfig"; path = "Target Support Files/Pods-FactPOC/Pods-FactPOC.release.xcconfig"; sourceTree = "<group>"; };
 		CEA619DC23E53354005C8988 /* FactPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA619E923E53354005C8988 /* FactPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FactPOC.xcdatamodel; sourceTree = "<group>"; };
 		CEA619F023E53358005C8988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA619F523E53358005C8988 /* FactPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA619F923E53359005C8988 /* FactPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactPOCTests.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			children = (
 				CEA61A1223E62746005C8988 /* Module */,
 				CEA619F023E53358005C8988 /* Info.plist */,
-				CEA619E823E53354005C8988 /* FactPOC.xcdatamodeld */,
 			);
 			path = FactPOC;
 			sourceTree = "<group>";
@@ -510,7 +507,6 @@
 			files = (
 				CEA61A2823E62746005C8988 /* Fact.swift in Sources */,
 				CEA61A2C23E62746005C8988 /* HomeInteractor.swift in Sources */,
-				CEA619EA23E53354005C8988 /* FactPOC.xcdatamodeld in Sources */,
 				CEA61A3523E63034005C8988 /* AppDelegate.swift in Sources */,
 				CEA61A3223E62C31005C8988 /* FactList.swift in Sources */,
 				CEA61A2D23E62746005C8988 /* HomeRouter.swift in Sources */,
@@ -854,19 +850,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CEA619E823E53354005C8988 /* FactPOC.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CEA619E923E53354005C8988 /* FactPOC.xcdatamodel */,
-			);
-			currentVersion = CEA619E923E53354005C8988 /* FactPOC.xcdatamodel */;
-			path = FactPOC.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = CEA619D423E53353005C8988 /* Project object */;
 }

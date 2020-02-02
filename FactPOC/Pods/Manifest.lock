@@ -1,18 +1,22 @@
 PODS:
+  - PKHUD (5.3.0)
   - SDWebImage (5.2.3):
     - SDWebImage/Core (= 5.2.3)
   - SDWebImage/Core (5.2.3)
 
 DEPENDENCIES:
+  - PKHUD (~> 5.0)
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
+    - PKHUD
     - SDWebImage
 
 SPEC CHECKSUMS:
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
 
-PODFILE CHECKSUM: 1eabba275faf273b9adb8a50a2c3f447506a4e3b
+PODFILE CHECKSUM: aef88984614c338a8f63f038c02429400de512f0
 
 COCOAPODS: 1.8.4
