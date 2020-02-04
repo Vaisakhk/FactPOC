@@ -10,6 +10,8 @@
 		1FAEB7090D02926A590F289F /* Pods_FactPOC_FactPOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA3AB187EF67CF6D120D47E /* Pods_FactPOC_FactPOCUITests.framework */; };
 		28BFD5A23EB3A000869105ED /* Pods_FactPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E0EF7A50F784A05AECE5F /* Pods_FactPOC.framework */; };
 		BA083FCE438119695982BA11 /* Pods_FactPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF52D273AF5EB62264E4010 /* Pods_FactPOCTests.framework */; };
+		CE34876923E9B40D0021AE6A /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34876823E9B40D0021AE6A /* HomeInteractorTests.swift */; };
+		CE34876B23E9B4730021AE6A /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34876A23E9B4730021AE6A /* HomePresenterTest.swift */; };
 		CEA619FA23E53359005C8988 /* FactPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA619F923E53359005C8988 /* FactPOCTests.swift */; };
 		CEA61A0523E53359005C8988 /* FactPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A0423E53359005C8988 /* FactPOCUITests.swift */; };
 		CEA61A2823E62746005C8988 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA61A1623E62746005C8988 /* Fact.swift */; };
@@ -53,6 +55,8 @@
 		8BF52D273AF5EB62264E4010 /* Pods_FactPOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactPOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5FCB328DBC43F8921D4C17 /* Pods-FactPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactPOCTests.release.xcconfig"; path = "Target Support Files/Pods-FactPOCTests/Pods-FactPOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		C880D22FF5CAB499003996AD /* Pods-FactPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactPOC.release.xcconfig"; path = "Target Support Files/Pods-FactPOC/Pods-FactPOC.release.xcconfig"; sourceTree = "<group>"; };
+		CE34876823E9B40D0021AE6A /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		CE34876A23E9B4730021AE6A /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
 		CEA619DC23E53354005C8988 /* FactPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA619F023E53358005C8988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA619F523E53358005C8988 /* FactPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +157,7 @@
 		CEA619F823E53359005C8988 /* FactPOCTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEA61A4123E6DAD9005C8988 /* Home */,
 				CEA619F923E53359005C8988 /* FactPOCTests.swift */,
 				CEA619FB23E53359005C8988 /* Info.plist */,
 			);
@@ -265,6 +270,15 @@
 				CEA61A3D23E6D53C005C8988 /* Constants.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		CEA61A4123E6DAD9005C8988 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE34876A23E9B4730021AE6A /* HomePresenterTest.swift */,
+				CE34876823E9B40D0021AE6A /* HomeInteractorTests.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		FC2CC3EE690075679619A490 /* Frameworks */ = {
@@ -533,7 +547,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE34876B23E9B4730021AE6A /* HomePresenterTest.swift in Sources */,
 				CEA619FA23E53359005C8988 /* FactPOCTests.swift in Sources */,
+				CE34876923E9B40D0021AE6A /* HomeInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -60,7 +60,7 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
     }
     
    //MARK:- Process The result (Filtered response to avoid empty results)
-    func processResult(data:FactList) {
+   private func processResult(data:FactList) {
         let dataArray = data.rows?.filter({ (fact) -> Bool in
             var isValid = true
             if (fact.title == nil && fact.description == nil && fact.imageHref == nil) {
@@ -78,7 +78,7 @@ class HomeInteractor: HomePresenterToInteractorProtocol {
     }
     
      //MARK:- Check Network Availability
-    public func networkUnavalible() -> Bool{
+    private func networkUnavalible() -> Bool{
         var isReachable:Bool = true;
         let reachability = Reachability ()
         if (reachability?.isReachable)! {

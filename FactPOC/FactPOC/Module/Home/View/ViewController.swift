@@ -24,10 +24,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showSpinner()
-        presenter?.startDownloadHomeDetails()
+        
         self.view.backgroundColor = UIColor.white
         customizeTableView()
         addTableViewConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        presenter?.startDownloadHomeDetails()
     }
     
     func customizeTableView() {
