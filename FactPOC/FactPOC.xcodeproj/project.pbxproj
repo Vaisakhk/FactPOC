@@ -321,6 +321,7 @@
 				CEA619F123E53358005C8988 /* Sources */,
 				CEA619F223E53358005C8988 /* Frameworks */,
 				CEA619F323E53358005C8988 /* Resources */,
+				6310AA62606F7D39BC348810 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -459,6 +460,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FactPOC/Pods-FactPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6310AA62606F7D39BC348810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FactPOCTests/Pods-FactPOCTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FactPOCTests/Pods-FactPOCTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FactPOCTests/Pods-FactPOCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		81F7AD708C1B6CC99094E2A4 /* [CP] Embed Pods Frameworks */ = {
